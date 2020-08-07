@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="22109b54-0502-4639-bcc7-7394878b9d5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/arrowdown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/arrowleft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/arrowright.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/src/arrow.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/arrow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/src/fireball.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/fireball.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/src/level.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/level.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/src/player.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/src/player.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +65,16 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/RunFromFireballs/public/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,12 +86,23 @@
       <workItem from="1596735447634" duration="27480000" />
       <workItem from="1596820955300" duration="838000" />
       <workItem from="1596821995980" duration="2000" />
-      <workItem from="1596822011315" duration="1101000" />
+      <workItem from="1596822011315" duration="16463000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="221" y="100" key="SettingsEditor" timestamp="1596822016506">
