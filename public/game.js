@@ -19,6 +19,10 @@ class MainScene extends Phaser.Scene {
         this.load.image('arrowright', 'assets/arrowright.png');
         this.load.image('arrowleft', 'assets/arrowleft.png');
         this.load.image('fire1', 'assets/fire1.png');
+        this.load.image('fire2', 'assets/fire2.png');
+        this.load.image('fire3', 'assets/fire3.png');
+        this.load.image('fire4', 'assets/fire4.png');
+        this.load.image('fire5', 'assets/fire5.png');
     }
 
     create() {
@@ -89,6 +93,8 @@ class MainScene extends Phaser.Scene {
         ];
 
         for (let i = 0; i < this.difficulty; i++) {
+            new Fireball(this, parseInt(Phaser.Math.Between(1,5)));
+                //let randX = (parseInt(Phaser.Math.Between(0, 1)) === 0 ? spawnBlockS : spawnBlockF) * blockWidth - halfW;
             new Fireball(this);
         }
     }
