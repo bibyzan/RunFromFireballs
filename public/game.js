@@ -40,26 +40,25 @@ class MainScene extends Phaser.Scene {
         this.projectiles = this.physics.add.group();
         this.enemies = this.physics.add.group();
 
-
         this.physics.add.collider(this.player, this.level.blocks, () => {
             // console.log('yeeee');
             this.player.x = this.lastX;
             this.player.y = this.lastY;
         });
 
-        this.physics.add.collider(this.player, this.enemies, (p, e) => {
+        this.physics.add.overlap(this.player, this.enemies, (p, e) => {
             console.log('enemenies');
             e.destroy();
             this.hp -= 5;
             this.hpText.setText('hp: ' + this.hp);
         });
 
-        this.physics.add.collider(this.enemies, this.projectiles, (e, p) => {
+        this.physics.add.overlap(this.enemies, this.projectiles, (e, p) => {
             console.log('ARROW COLLIDE');
-            this.projectiles.kill(p);
-            this.enemies.kill(e);
+            // this.projectiles.kill(p);
+            // this.enemies.kill(e);
             e.destroy();
-            p.destroy();
+            // p.destroy();
             this.score += 10;
             this.scoreText.setText('score: ' + this.score);
         });
@@ -68,9 +67,10 @@ class MainScene extends Phaser.Scene {
     update() {
         const now = new Date();
         if (parseInt(((now.getTime() - this.initCreateTime.getTime()) / 3000) + '') > this.difficulty) {
+            console.log('ROUND')
             this.difficulty++;
             this.spawnRound();
-            this.projectiles.clear(true, true);
+            // this.projectiles.clear(true, true);
         }
 
         const {x, y} = this.player;
@@ -96,8 +96,8 @@ class MainScene extends Phaser.Scene {
 
 new Phaser.Game({
     pixelArt: true,
-    width: (16 * 2) * 11,
-    height: (16 * 2) * 11,
+    width: totalWidth,
+    height: totalWidth,
     backgroundColor: '#3498db',
     scene: MainScene,
     physics: { default: 'arcade' },

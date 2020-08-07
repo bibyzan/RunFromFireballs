@@ -21,7 +21,7 @@ class Player extends Phaser.GameObjects.Sprite {
 
     update() {
         const arrow = this.arrow;
-        const speed = 3;
+        const speed = 5;
         if (arrow.right.isDown) {
             this.x += speed;
             this.setTexture('linkright');

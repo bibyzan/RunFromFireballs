@@ -1,7 +1,7 @@
 'use strict';
 
 const scale = 2;
-const blocksLen = 11;
+const blocksLen = 21;
 const blockWidth = 16 * scale;
 const totalWidth = blocksLen * blockWidth;
 const startI = blockWidth / 2;
@@ -16,7 +16,7 @@ const quarterP = (startI + lastP) / 3;
 const threeQuarterP = midI + quarterP;
 
 const spawnBlockS = 3;
-const spawnBlockF = 9;
+const spawnBlockF = blocksLen - 2;
 
 const isSpawn = (x, y) => (
     (((x + startI) / blockWidth) === spawnBlockS &&

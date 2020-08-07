@@ -1,7 +1,7 @@
 const randomCorner = () => {
     let halfW = blockWidth / 2;
-    let randX = (parseInt(Phaser.Math.Between(0, 1)) === 0 ? 3 : 9) * blockWidth - halfW;
-    let randY = (parseInt(Phaser.Math.Between(0, 1)) === 0 ? 3 : 9) * blockWidth - halfW;
+    let randX = (parseInt(Phaser.Math.Between(0, 1)) === 0 ? spawnBlockS : spawnBlockF) * blockWidth - halfW;
+    let randY = (parseInt(Phaser.Math.Between(0, 1)) === 0 ? spawnBlockS : spawnBlockF) * blockWidth - halfW;
     return {
         x: randX, y: randY,
     };
@@ -12,7 +12,6 @@ class Fireball extends Phaser.GameObjects.Sprite {
         super(game, 100, 100, `fire${lv}`);
         this.game = game;
         game.add.existing(this);
-        game.projectiles.add(this);
         game.physics.world.enableBody(this);
         game.enemies.add(this);
         this.setScale(2);
