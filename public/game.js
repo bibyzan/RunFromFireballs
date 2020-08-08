@@ -25,7 +25,7 @@ const getHighScores = () => {
             });
             let scoresDiv = document.getElementById('scores');
             let scores = '<h3>High scores</h3>';
-            for (let score of await response.json()) {
+            for (let score of (await response.json()).sort((a, b) => (parseInt(a.score) < parseInt(b.score)))) {
                 scores += `<p>${score.name}: ${score.score}</p>`
             }
             scoresDiv.innerHTML = scores;
