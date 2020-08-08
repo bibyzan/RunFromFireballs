@@ -53,7 +53,7 @@ class MainScene extends Phaser.Scene {
         this.load.image('spawn', 'assets/spawn.png');
         this.load.image('linkdown', 'assets/linkdown.png');
         this.load.image('linkleft', 'assets/linkleft.png');
-        this.load.image('linkright', 'assets/linkright.png');
+        this.load.image('linkleft2', 'assets/linkleft2.png');
         this.load.image('linkup', 'assets/linkup.png');
         this.load.image('arrowup', 'assets/arrowup.png');
         this.load.image('bluearrow', 'assets/bluearrow.png');
@@ -115,6 +115,13 @@ class MainScene extends Phaser.Scene {
             e.destroy();
             this.hp -= 5;
             this.hpText.setText('hp: ' + this.hp);
+            this.tweens.add({
+                targets: this.player,
+                duration: 200,
+                scaleX: 1.5,
+                scaleY: 1.5,
+                yoyo: true,
+            });
             if (this.hp <= 0) {
                 this.player.destroy();
                 let name = window.prompt('Game Over! your score was: ' + this.score, 'Enter Name');
