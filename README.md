@@ -7,8 +7,8 @@
 
 ## Self-Evaluation:
 
-how many points out of 20 do you deserve on this assignment:
-20
+how many points out of 75 do you deserve on this assignment:
+75
 
 ## Self-Reflection:
 good exercise on setting up a simple game 
