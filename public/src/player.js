@@ -55,7 +55,7 @@ class Player extends Phaser.GameObjects.Sprite {
         }
         const speed = 5 * this.modifier;
         if (this.modifier > 1) {
-            this.modifier -= 0.01;
+            this.modifier -= 0.1;
         }
         if (arrow.right.isDown) {
             this.x += speed;
