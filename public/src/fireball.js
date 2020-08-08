@@ -27,12 +27,10 @@ class Fireball extends Phaser.GameObjects.Sprite {
 
     update() {
         let speed = this.speed;
-        if (this.level !== 5) {
-            this.flipOffset += 0.1;
-            if (this.flipOffset >= 1) {
-                this.toggleFlipX(!this.flipX);
-                this.flipOffset = 0;
-            }
+        this.flipOffset += 0.1;
+        if (this.flipOffset >= 1) {
+            this.toggleFlipX(!this.flipX);
+            this.flipOffset = 0;
         }
         if (this.level === 4 || this.level === 5) {
             if (this.brake <= 0 && !this.timingOut) {
